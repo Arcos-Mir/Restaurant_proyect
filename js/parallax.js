@@ -1,26 +1,26 @@
 $(document).ready(function(){
 
     $(window).scroll(function(){
-        var windowWidth = $(window).width();
+        let windowWidth = $(window).width();
 
         if(windowWidth > 800 ) {
-            var scroll = $(window).scrollTop();
+            let scroll = $(window).scrollTop();
 
-            $('header .textos').css ({
+            $('header .text').css ({
                 'transform': 'translate(0px,' + scroll / 4 + '%)'
             });
 
-            $('.acerca-de article').css ({
-                'transform': 'translate(0px, -' + scroll / 5 + '%)'
+            $('.about article').css ({
+                'transform': 'translate(0px, -' + scroll / 6 + '%)'
             });
         }
     });
 
     $(window).resize(function(){
-        var windowWidth = $(window).width();
+        let windowWidth = $(window).width();
         if(windowWidth < 800) {
-            $('.acerca-de article').css ({
-                'transform': 'transalate(0px, 0px)'
+            $('.about article').css ({
+                'transform': 'translate(0px, 0px)'
             });
         }
     });

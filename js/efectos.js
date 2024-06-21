@@ -9,47 +9,47 @@ $(document).ready(function(){
         $(this).animate({top: '0'}, 2000 + (index * 500));
     });
     
-
+    //efecto header
     if( $(window).width() > 800 ) {
-        $('header .textos').css ({
+        $('header .text').css ({
             opacity: 0,
             marginTop:0
         });
-        $('header .textos').animate ({
+        $('header .text').animate ({
             opacity: 1,
             marginTop:'-150px'
-        }, 1500);
+        }, 1800);
         
     }
 
     //scroll elementos menu
-    var acercaDe = $('#acerca-de').offset().top,
-        menu = $('#platillos').offset().top,
-        galeria = $('#galeria').offset().top,
-        ubicacion = $('#ubicacion').offset().top;
+    let about = $('#about').offset().top,
+        menu = $('#saucers').offset().top,
+        gallery = $('#gallery').offset().top,
+        location = $('#location').offset().top;
 
-    $('#btn-acerca-de').on('click', function(e){
+    $('#btn_about').on('click', function(e){
         e.preventDefault();
         $('html, body').animate ({
-            scrollTop: acercaDe -100
+            scrollTop: about
         }, 500);
     });
-    $('#btn-menu').on('click', function(e){
+    $('#btn_menu').on('click', function(e){
         e.preventDefault();
         $('html, body').animate ({
-            scrollTop: menu -50
+            scrollTop: menu 
         }, 500);
     });
-    $('#btn-galeria').on('click', function(e){
+    $('#btn_gallery').on('click', function(e){
         e.preventDefault();
         $('html, body').animate ({
-            scrollTop: galeria -50
+            scrollTop: gallery 
         }, 500);
     });
-    $('#btn-ubicacion').on('click', function(e){
+    $('#btn_location').on('click', function(e){
         e.preventDefault();
         $('html, body').animate ({
-            scrollTop: ubicacion 
+            scrollTop: location 
         }, 500);
     });
 });

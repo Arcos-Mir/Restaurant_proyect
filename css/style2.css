@@ -89,4 +89,83 @@ footer .container .social_media {
 }
 
 
+/*----- ----- MEDIA QUERIES ----- ----- */
 
+@media screen and (max-width:800px) {
+    header div.container {
+        position: static;
+        height: auto;
+    }
+    header div.container div.text {
+        position: static;
+        margin: 100px 0;
+    }
+    header nav.menu{
+        text-align: center;
+    }
+    header nav.menu a {
+        margin: 10px 20px;
+    }
+    header div.text h1.name {
+        font-size: 30px;
+    }
+    .container div.text > h3 {
+        font-size: 18px;
+    }
+    .content section.about div.photo {
+        width: 100%;
+        position: relative;
+    }
+    .content .about div.container > article {
+        position: relative;
+        width: 100%;
+        top: -50px;
+        transform: translate(0px 0);
+    }
+    main.content section.menu{
+        padding-top: 300px;
+    }
+    main.content .menu .container_menu2 article {
+        width: 100%;
+    }
+    main.content .gallery .photo {
+        width: 50%;
+        height: 50%;
+    }
+    .content .map  {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:390px) {
+    header div.container .menu {
+        text-align: center;
+    }
+    .container div.text > .name {
+        font-size: 80px;
+    }
+    .name > span {
+        font-size: 120px;
+        margin-left: 30px;
+    }
+    .about div.container article > h3 {
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+    .container_menu2 article p.name,
+    .container_menu2 article p.cost{
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    main.content .location .direction {
+        margin-bottom: 15px;
+    }
+
+    main.content .location .direction,
+    main.content .location .hour {
+        width: 100%;
+        text-align: center;
+    }
+}
